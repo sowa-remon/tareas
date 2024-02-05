@@ -1,0 +1,32 @@
+<div class="container-listado">
+    <h5>Tus tareas:</h5>
+
+    <div *ngIf="!tareas.length">
+        No tienes tareas pendientes
+        
+    </div>
+
+    <table *ngIf="tareas.length">
+    <thead>
+            <tr>
+            <th>Número de tarea</th>
+            <th>Título</th>
+            <th>Asunto</th>
+            <th>Descripción</th>
+            <th>Fecha límite</th>
+            <th>Urgencia</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="datos" *ngFor="let tarea of tareas">
+        <td>{{tarea.id}}</td>
+        <td>{{tarea.titulo}}</td>
+        <td>{{tarea.asunto}}</td>
+        <td>{{tarea.desc}}</td>
+        <td>{{tarea.fecha}}</td>
+        <td>{{tarea.urgencia}}</td>
+
+    </tr>
+    </tbody>
+    </table>
+</div>

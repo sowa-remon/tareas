@@ -1,0 +1,37 @@
+<div class="container-form">
+    <h5>Agregar una tarea</h5>
+
+    <div class="col">
+        <p>
+            <label for="">Título de la tarea: </label>
+            <input type="text" class="form-control" [(ngModel)]= "tarea.titulo" >
+        </p>    
+        <p>
+            <label for="">Asunto: </label>
+            <select [(ngModel)]= "tarea.asunto" class="form-control">
+                <option *ngFor="let asunto of asuntos" value="{{asunto.id}}">
+                {{asunto.asunto}}
+                </option>
+            </select>
+        </p>
+        <p>
+            <label for="">Descripción: </label>
+            <input type="text" class="form-control" [(ngModel)]= "tarea.desc">
+        </p>  
+        <p>
+            <label for="">Fecha límite: </label>
+            <input type="date" class="form-control" [(ngModel)] = "tarea.fecha">
+        </p>
+        <p>
+            <label for="">Urgencia: </label>
+            <select [(ngModel)]= "tarea.urgencia" class="form-control">
+                <option *ngFor="let urgencia of tipos" value="{{urgencia.id}}">
+                {{urgencia.que}}
+                </option>
+            </select>
+        </p>
+        <p style="text-align: center; margin-top: 2.5rem;">
+            <button class="btn-guardar" type="button" (click)="this.insertarTarea()">Insertar</button>
+        </p>
+    </div>
+</div>

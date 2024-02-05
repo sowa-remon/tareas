@@ -1,0 +1,29 @@
+h5{
+    color: rgb(156, 20, 97);
+    text-align: center;
+    font-weight: 760;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.container-form{
+    margin: 1rem 0;
+}
+
+label{
+    font-weight: bold;
+}
+
+.btn-guardar{
+    padding: 1rem 3rem;
+    font-weight: bold;
+    background-color: purple;
+    border-radius: 1rem;
+    border: none;
+    color: whitesmoke;
+}
+
+.btn-guardar:hover{
+    background-color: plum;
+    color: #1e1e1e;
+}

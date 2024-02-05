@@ -1,0 +1,26 @@
+h5{
+    color: rgb(20, 20, 156);
+    text-align: center;
+    font-weight: 760;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.container-listado{
+    margin: 1rem 0;
+    text-align: center;
+}
+
+th{
+    font-weight: bold;
+    padding:0 2rem;
+}
+
+.datos{
+    border-bottom: solid 2px palevioletred;
+  }
+
+  .datos:hover{
+    background-color: rgba(228, 125, 160, .3);
+
+  }
